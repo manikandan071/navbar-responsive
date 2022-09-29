@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.nav-sec{
+    padding: 10px 0;
+    box-shadow: 0 0 5px #918fddad;
+}
+.manu-list a:hover{
+    color: #5257cfc2;
+    transition: all 0.5s ease;
+}
+.manu-phone a:hover{
+    color: #5257cfc2;
+    transition: all 0.5s ease;
+}
+@media (min-width: 921px){
+    .logo a{
+        text-decoration: none;
+        font-size: 25px;
+        color: #5257cfc2;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+    }
+    .manubar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .tgl{
+        display: none;
+    }
+    .manu-list{
+        display: block;
+    }
+    .manu-list a{
+        text-decoration: none;
+        color: rgb(27 155 168);
+    }
+    .manu-list ul{
+        padding: 0;
+    }
+    .manu-list >ul >li{
+        list-style: none;
+        display: inline-block;
+        padding-left: 30px;
+    }
+    .drpdown{
+        position: relative;
+    }
+    .drplist{
+        position: absolute;
+        width: 150px;
+        top: 20px;
+        left: 0;
+        background: #fff;
+        box-shadow: 0 0 5px #6764d1ad;
+        border-radius: 5px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s ease;
+    }
+    .drpdown:hover .drplist{
+        opacity: 1;
+        visibility: visible;
+    }
+    .drplist li{
+        list-style: none;
+        padding: 10px 20px;
+    }
+    .manu-phone{
+        display: none!important;
+    }
+}
+@media (max-width: 920px){
+
+    .logo a{
+        text-decoration: none;
+        font-size: 25px;
+        color: rgb(27 155 168);
+    }
+.manubar{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.manu-list{
+    display: none;
+}
+.manu-phone{
+    display: none;
+    text-align: center;
+}
+.manu-phone a{
+    text-decoration: none;
+}
+.manu-phone ul{
+    padding: 0;
+}
+.manu-phone ul li{
+    list-style: none;
+    display: block;
+    padding: 10px 0;
+}
+.drpdown{
+    position: relative;
+}
+.drplist{
+    position: static;
+    width: 70%;
+    margin: 10px auto 0 auto;
+    background: #fff;
+    box-shadow: 0 0 5px #6764d1ad;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+    transition: all 0.5s ease;
+}
+.drpdown:hover .drplist{
+    opacity: 1;
+    visibility: visible;
+    display: block;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.tgl{
+    display: block;
+}
+.tgl .btn{
+    background: transparent;
+    border: none;
+    font-size: 25px;
+}
+}
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
